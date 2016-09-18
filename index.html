@@ -4,32 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Pomodoro</title>
-    <link rel="stylesheet" href="./semantic.min.css" />
-
-
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
 </head>
-<div class="break">
-    <p>SESSION LENGTH</p>
-    <input type="button" id="minusMin" value='-'>
-    <span id="p1">25</span>
+<main>
+    <ul>
+        <li>
+            <div class="break">
+                <p>SESSION LENGTH</p>
+                <input class="btn btn-default" type="button" id="minusMin" value='-'>
+                <span id="p1">25</span>
+                <input class="btn btn-default" type="button" id="plusMin" value='+'>
+            </div>
+        </li>
+        <li>
+            <div class="session">
+                <p>BREAK LENGTH</p>
+                <input class="btn btn-default" type="button" id="minusMinBreak" value='-'>
+                <span id="p2">5</span>
+                <input class="btn btn-default" type="button" id="plusMinBreak" value='+'>
+            </div>
+        </li>
+    </ul>
 
-    <input type="button" id="plusMin" value='+'>
-</div>
-<div class="session">
-    <p>BREAK LENGTH</p>
-    <input type="button" id="minusMinBreak" value='-'>
-    <span id="p2">5</span>
 
-    <input type="button" id="plusMinBreak" value='+'>
-</div>
-<br>
-<input type="button" value='start Countdown' id='startBtn'>
-<input type="text" id='txt'>
-<input type="button" value='pause Countdown' id='pauseBtn'>
-<input type="button" value='reset Countdown' id='resetBtn'>
-<input type="button" value='continue Countdown' id='continueBtn'>
-<script src="./jquery.min.js"></script>
-<script src="./main.js"></script>
+    <br>
+    <input type="button" value='start Countdown' id='startBtn'>
+    <input type="button" class="hidden" value='reset Countdown' id='resetBtn'>
+
+    <span id="minutes">25</span>:
+    <span id='seconds'>00</span>
+
+    <input type="button" value='pause Countdown' id='pauseBtn'>
+    <input type="button" class="hidden" value='continue Countdown' id='continueBtn'>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</main>
 </body>
 
 </html>
