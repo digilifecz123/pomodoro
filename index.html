@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="./semantic.min.css" />
+
+
+</head>
+<div class="break">
+    <p>SESSION LENGTH</p>
+    <input type="button" id="minusMin" value='-'>
+    <span id="p1">25</span>
+
+    <input type="button" id="plusMin" value='+'>
+</div>
+<div class="session">
+    <p>BREAK LENGTH</p>
+    <input type="button" id="minusMinBreak" value='-'>
+    <span id="p2">5</span>
+
+    <input type="button" id="plusMinBreak" value='+'>
+</div>
+<br>
+<input type="button" value='start Countdown' id='startBtn'>
+<input type="text" id='txt'>
+<input type="button" value='pause Countdown' id='pauseBtn'>
+<input type="button" value='reset Countdown' id='resetBtn'>
+<input type="button" value='continue Countdown' id='continueBtn'>
+<script src="./jquery.min.js"></script>
+<script src="./main.js"></script>
+</body>
+
+</html>
