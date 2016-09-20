@@ -2,42 +2,53 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Pomodoro</title>
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <meta charset="UTF-8">
+  <title>Pomodoro</title>
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+
 </head>
-<main>
-    <ul>
-        <li>
-            <div class="break">
-                <p>SESSION LENGTH</p>
-                <input class="btn btn-default" type="button" id="minusMin" value='-'>
-                <span id="p1">25</span>
-                <input class="btn btn-default" type="button" id="plusMin" value='+'>
-            </div>
-        </li>
-        <li>
-            <div class="session">
-                <p>BREAK LENGTH</p>
-                <input class="btn btn-default" type="button" id="minusMinBreak" value='-'>
-                <span id="p2">5</span>
-                <input class="btn btn-default" type="button" id="plusMinBreak" value='+'>
-            </div>
-        </li>
-    </ul>
+<main class="container">
+  <ul class="list-inline">
+    <li>
+      <div class="break">
+        <p>SESSION LENGTH</p>
+        <input class="btn btn-default" type="button" id="minusMin" value='-'>
+        <span id="p1">25</span>
+        <input class="btn btn-default" type="button" id="plusMin" value='+'>
+      </div>
+    </li>
+    <li>
+      <div class="session">
+        <p>BREAK LENGTH</p>
+        <input class="btn btn-default" type="button" id="minusMinBreak" value='-'>
+        <span id="p2">5</span>
+        <input class="btn btn-default" type="button" id="plusMinBreak" value='+'>
+      </div>
+    </li>
+  </ul>
 
 
-    <br>
-    <input type="button" value='start Countdown' id='startBtn'>
-    <input type="button" class="hidden" value='reset Countdown' id='resetBtn'>
 
-    <span id="minutes">25</span>:
-    <span id='seconds'>00</span>
 
-    <input type="button" value='pause Countdown' id='pauseBtn'>
-    <input type="button" class="hidden" value='continue Countdown' id='continueBtn'>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/main.js"></script>
+  <div class='time'>
+    <time id="minutes">25</time> :
+    <time id='seconds'>00</time>
+  </div>
+  <div>
+    <span class='time-mins'>Mins</span>
+    <span class='time-secs'>Secs</span>
+  </div>
+  <bdi></bdi>
+
+  <input type="button" class="start btn btn-primary" value='start' id='startBtn'>
+  <input type="button" class="reset btn btn-danger" value='reset' id='resetBtn'>
+
+
+  <input type="button" class="pause btn btn-warning" value='pause' id='pauseBtn'>
+  <input type="button" class="continue btn btn-info" value='continue' id='continueBtn'>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </main>
 </body>
 
